@@ -1,0 +1,11 @@
+table,th,td{
+  border:2px solid pink;
+  border-collapse:separate;
+  empty-cells:hide;
+}
+
+
+table{
+  text-align:center;
+  margin:auto;
+}

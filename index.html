@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tables and Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+   <header>
+     <h1> Tables and Forms</h1>
+   </header>
+  
+   <section>
+     <h2>Tables</h2>
+     <table> 
+      <caption>Top 3 Favorite Things</caption>
+      <tr>
+        <th colspan="3">Top Favorites</th>
+      </tr>
+        <tr> 
+          <th>Foods</th>
+          <th>Activities</th>
+          <th>Musicians</th>
+        </tr>
+        <tr>
+          <td>Ice-cream</td>
+          <td>Youtube</td>
+          <td>BTS</td>
+        </tr>
+        <tr>
+          <td>Fruits</td>
+          <td>Ice-Skating</td>
+          <td>TNT</td>
+        </tr>
+        <tr>
+          <td>Sandwhich</td>
+          <td>Relaxing</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Combines 2 rows, col 1</td>
+          <td rowspan="2">Combines 2 rows, col 2</td>
+          <td rowspan="2">Combines 2 rows, col 3</td>
+        </tr>
+        
+     </table>
+   </section>
+  
+<section>
+  <h2>Forms</h2>
+  <form>
+    <fieldset>
+     <legend>Basic User Data:</legend>
+      <label for="name">Name</label>
+   <input placeholder="Enter your name" type="text" id="name" required />
+
+  <br>
+
+      <label for="height">Height</label>
+   <input placeholder="Enter your height" type="text" id="height" />
+
+   <br>
+
+   <label for="password">Password</label>
+   <input type="password" id="password" />
+  <br>
+
+<label for="super">Super Powers</label>
+    <select id="super" name="super">
+     <option value="blank">--Please choose from below--</option>
+  <option value="mind">Mindreading</option>
+  <option value="fly">Flying</option>
+  <option value="invisibility">Invisibility</option>
+  <option value="strong">Strength</option>
+    </select>
+    <br>
+  <label for="email">Email</label>
+   <input type="email" id="email" name="email" />
+       <br> 
+
+<label for="month">Month Picker</label>
+   <input type="month" id="month" name="month" />
+      <br><br>
+</fieldset>
+
+<fieldset>
+ <legend>Checkbox and Radio buttons:</legend>
+  <p>Pick Your Favorite Meal</p>
+   <label for="breakfast">Breakfast</label>
+     <input type="checkbox" id="breakfast" name="meal" value="breakfast" />
+       <br>
+   <label for="lunch">Lunch</label>
+     <input type="checkbox" id="lunch" name="meal" value="lunch" />
+       <br>
+   <label for="dinner">Dinner</label>
+     <input type="checkbox" id="dinner" name="meal" value="dinner" />
+       <br>
+  
+  <p>Pick Your Language</p>
+   <label for="html">HTML</label>
+     <input type="radio" id="html" name="langlist" value="html" />
+       <br>
+   <label for="css">CSS</label>
+     <input type="radio" id="css" name="langlist" value="css" />
+       <br>
+   <label for="js">Javascript</label>
+     <input type="radio" id="js" name="langlist" value="js" />
+       <br><br>
+</fieldset>
+ <br><br>
+
+<fieldset>
+  <legend>Ranges, Meters, and Number:</legend>
+ 
+<label for="range">Range (slider)</label>
+   <input type="range" id="range" name="range" min="0" max="100" value="50"/>
+      <br><br>
+
+<label for="meter">Meter (no slider)</label>
+   <meter id="meter" id="meter" name="meter" min="0" max="100" value="50"></meter>
+       <br><br>
+
+<label for="rating">Rating</label>
+   <input type="number" id="rating" name="rating" min="0" max="25" step="5" value="10"/>
+  <br>
+  </fieldset>
+  
+  
+  
+  <fieldset>
+    <legend>The Figure Element</legend>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1576291098135-8b24e9b326f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFwcHklMjBob2xpZGF5c3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="alternate text" /> <figcaption>Caption attached to the image</figcaption>
+      </figure>
+    </fieldset>
+
+  <br><br>
+
+    <input type="submit" value="SUBMIT" />
+    </form>
+</section>
+
+  
+  
+  
+  </body>
+</html>
